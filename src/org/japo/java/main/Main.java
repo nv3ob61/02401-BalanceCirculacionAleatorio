@@ -15,32 +15,35 @@
  */
 package org.japo.java.main;
 
-import java.util.Locale;
+//import java.util.Locale;
 import java.util.Random;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 /**
  *
  * @author mon-mode
  */
 public class Main {
+    /*Objeto Scanner, en estos ejercicios del Random no se utiliza.
 
     public static final Scanner SCN
             = new Scanner(System.in, "Windows-1252")
-                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
-
+                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+"); */
+    
+    //Inicio Random
     public static final Random RND = new Random();
 
     public static void main(String[] args) {
-       //Variable
+        //Variable
         int balance;
-    
+
         //Generar dato
         balance = RND.nextInt();
-        
-        //Mensaje de salida, para sacar un número de 0 a 9 ver línea 43.
-        System.out.printf("Balance de circulación.....: %d%n", balance);
-        System.out.printf("Balance de circulación.....: %d%n", balance % 10);
+
+        //Mensajes de salida, usamos Math.abs para que sean todos positivos.
+        System.out.printf("Balance de circulación.........: %d%n", Math.abs(balance));
+        //Para sacar un número de 0 a 9
+        System.out.printf("Balance de circulación (max 10): %d%n", Math.abs(balance) % 10);
 
     }
 }
