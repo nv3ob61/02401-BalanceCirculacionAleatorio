@@ -34,16 +34,20 @@ public class Main {
     public static final Random RND = new Random();
 
     public static void main(String[] args) {
-        //Variable
+        //Variables
         int balance;
+        double balanceDouble;
 
-        //Generar dato
+        //Generar datos aleatorios, el Math random genera valores entre 0 y 1
         balance = RND.nextInt();
+        balanceDouble = Math.random();
 
         //Mensajes de salida, usamos Math.abs para que sean todos positivos.
         System.out.printf("Balance de circulación.........: %d%n", Math.abs(balance));
         //Para sacar un número de 0 a 9
         System.out.printf("Balance de circulación (max 10): %d%n", Math.abs(balance) % 10);
+        
+        System.out.printf("Balance con Math.random........: %.0f %n", balanceDouble  * 1E10);
 
     }
 }
