@@ -46,8 +46,8 @@ public class Main {
         System.out.printf("Balance de circulación.........: %d%n", Math.abs(balance));
         //Para sacar un número de 0 a 9
         System.out.printf("Balance de circulación (max 10): %d%n", Math.abs(balance) % 10);
-        
-        System.out.printf("Balance con Math.random........: %.0f %n", balanceDouble  * 1E10);
+        // Quitamos los decimales al Math.random
+        System.out.printf("Balance con Math.random........: %.0f%n", balanceDouble  * 1E10);
 
     }
 }
