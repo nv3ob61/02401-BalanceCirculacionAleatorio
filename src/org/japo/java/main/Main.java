@@ -15,21 +15,13 @@
  */
 package org.japo.java.main;
 
-//import java.util.Locale;
 import java.util.Random;
-//import java.util.Scanner;
 
 /**
  *
  * @author mon-mode
  */
 public class Main {
-    /*Objeto Scanner, en estos ejercicios del Random no se utiliza.
-
-    public static final Scanner SCN
-            = new Scanner(System.in, "Windows-1252")
-                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+"); */
-    
     //Inicio Random
     public static final Random RND = new Random();
 
